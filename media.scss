@@ -16,25 +16,25 @@
         margin-bottom: 100px;
         margin-top: 200px;
         z-index: 2000;
+        .detail-mobile{
+            margin-left: auto;
+            margin-right: auto;
+            visibility: visible;
+            text-align: center;
+            width: 100%;
+            h1{
+                font-size: 32px;
+            }
+            h3{
+                font-size: 15px;
+            }
+        }
         .product-detail{
             grid-template-columns: 1fr;
             width: 90%;
             margin: 0;
             margin-left: auto;
             margin-right: auto;
-            .detail-mobile{
-                margin-left: auto;
-                margin-right: auto;
-                visibility: visible;
-                text-align: center;
-                width: 100%;
-                h1{
-                    font-size: 32px;
-                }
-                h3{
-                    font-size: 15px;
-                }
-            }
             .detail-pc{
                 h1,h3{
                     visibility: hidden;
@@ -71,6 +71,7 @@
 {   
     .toggle
     {
+        left: 200px;
         display: block;
         position: relative;
         width: 30px;
@@ -118,10 +119,11 @@
         }
     }
     .sidebar {
+        left: -200px;
         .sidebarcontent {
             position: absolute;
             top: 0;
-            left: 0;
+            left: 200px;
             width: 100vw;
             height: 100vh;
             text-align: center;
@@ -130,6 +132,9 @@
             visibility: hidden;
             opacity: 0;
             margin-top: 0vh !important;
+            li.start{
+                padding-top: 15vh;
+            }
         }
     }
     .sidebar.active ul
@@ -142,8 +147,8 @@
     .sidebar.active ul li a
     {
         display: inline-block;
-        margin: 10px 0;
-        font-size: 20px;
+        margin: 20px 0;
+        font-size: 26px;
     }
     .sidebar .logo,
     .sidebar ul li a

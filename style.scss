@@ -235,6 +235,27 @@ section {
 //PRODUCTS
 .products-section{
 	width: 100%;
+	.detail-mobile{
+		visibility: hidden;
+		position: absolute;
+		padding-bottom: 50vh;
+		h1 {
+			color: #212121;
+			font-size: 32px;
+			font-weight: 900;
+		}
+		h2 {
+			color: #53565A;
+			font-size: 22px;
+			font-weight: 700px;
+		}
+		h3 {
+			color: #53565A;
+			font-size: 22px;
+			font-weight: 300;
+			margin-bottom: 250px;
+		}
+	}
 	.product-detail {
 		width: 80%;
 		min-height: 50vh;
@@ -243,27 +264,6 @@ section {
 		padding-top: 15vh;
 		grid-template-columns: repeat(2, 1fr);
 		display: grid;
-		.detail-mobile{
-			visibility: hidden;
-			position: absolute;
-			padding-bottom: 50vh;
-			h1 {
-				color: #212121;
-				font-size: 32px;
-				font-weight: 900;
-			}
-			h2 {
-				color: #53565A;
-				font-size: 22px;
-				font-weight: 700px;
-			}
-			h3 {
-				color: #53565A;
-				font-size: 22px;
-				font-weight: 300;
-				margin-bottom: 250px;
-			}
-		}
 		.imagery {
 			flex: 1 1 45%;
 			width: 100%;
@@ -374,6 +374,26 @@ section {
 							font-size: 20px;
 							font-weight: 700;
 							transition: 0.4s;
+							z-index: 2001;
+							&:hover {
+								box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+							}
+						}
+						button.selected {
+							display: block;
+							width: 100%;
+							padding: 15px;
+							appearance: none;
+							outline: none;
+							background: none;
+							cursor: pointer;
+							border: 2px solid gray;
+							color: white;
+							background-color: black;
+							font-size: 20px;
+							font-weight: 700;
+							transition: 0.4s;
+							z-index: 2001;
 							&:hover {
 								box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 							}
@@ -384,6 +404,48 @@ section {
 		}
 	}
 }
+
+//EXECUTION
+.execution-section{
+	background: url(images/wykonanie.jpg) no-repeat right;
+	margin-right: 50px;
+	background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+	padding: 100px 0;
+	margin: 15vh 5vh;
+	.inner-container{
+		width: 45%;
+		float: left;
+		margin-left: 15vh;
+		background-color: #fdfdfd;
+		padding: 18vh 10vh;
+		-webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+		box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+		h1{
+			margin-bottom: 30px;
+			font-size: 30px;
+			font-weight: 900;
+		}
+		.text{
+			font-size: 13px;
+			color: #545454;
+			line-height: 30px;
+			text-align: justify;
+			margin-bottom: 40px;
+		}
+		
+		.skills{
+			display: flex;
+			justify-content: space-between;
+			font-weight: 700;
+			font-size: 13px;
+			text-align: center;
+		}
+	}
+}
+
 
 //CONTACT
 section.contact{
@@ -484,46 +546,3 @@ section.contact{
 		text-align: center;
 	}
 }
-
-
-//ABOUT
-.execution-section{
-	background: url(images/wykonanie.jpg) no-repeat right;
-	margin-right: 50px;
-	background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-	padding: 100px 0;
-	margin: 15vh 5vh;
-	.inner-container{
-		width: 45%;
-		float: left;
-		margin-left: 15vh;
-		background-color: #fdfdfd;
-		padding: 18vh 10vh;
-		-webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
-		-moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
-		box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
-		h1{
-			margin-bottom: 30px;
-			font-size: 30px;
-			font-weight: 900;
-		}
-		.text{
-			font-size: 13px;
-			color: #545454;
-			line-height: 30px;
-			text-align: justify;
-			margin-bottom: 40px;
-		}
-		
-		.skills{
-			display: flex;
-			justify-content: space-between;
-			font-weight: 700;
-			font-size: 13px;
-			text-align: center;
-		}
-	}
-}
-
