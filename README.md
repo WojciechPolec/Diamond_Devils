@@ -13,4 +13,4 @@ Website of a clothing company
 
 ## Demo
 
-Project Link: [http://www.diamonddevils.pl/](http://www.diamonddevils.pl/)
+Project Link: [https://wojciechpolec.github.io/Diamond_Devils/](https://wojciechpolec.github.io/Diamond_Devils/)
